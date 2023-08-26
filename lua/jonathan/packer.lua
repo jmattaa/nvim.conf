@@ -11,8 +11,9 @@ return require('packer').startup(function(use)
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
-    -- Moonfly
+    -- colors
     use { 'bluz71/vim-moonfly-colors' }
+    use { 'rose-pine/nvim', as = 'rose-pine' }
 
     -- Treesitter
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
@@ -49,20 +50,6 @@ return require('packer').startup(function(use)
 
     -- Markdown preview
     use('davidgranstrom/nvim-markdown-preview')
-
-    -- noice nvim
-    use {
-        "folke/noice.nvim",
-        requires = {
-            { "MunifTanjim/nui.nvim" },
-        }
-    }
-
-    -- lualine
-    use {
-        'nvim-lualine/lualine.nvim',
-        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
-    }
 
     -- My plugins
     use('jmattaa/quickmark.nvim')
