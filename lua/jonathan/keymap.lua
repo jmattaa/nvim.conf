@@ -4,8 +4,8 @@ vim.keymap.set("i", "jk", "<ESC>")
 vim.keymap.set("n", "<leader>nt", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>m", ":Mason<CR>")
 
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "<leader>k", ":m '<-2<CR>gv=gv")
+vim.keymap.set("v", "<leader>j", ":m '>+1<CR>gv=gv")
 
 -- so we stay in visual mode when indenting
 vim.keymap.set("v", "<", "<gv")
