@@ -15,6 +15,8 @@ return require('packer').startup(function(use)
     use { 'rose-pine/nvim', as = 'rose-pine' }
     use('bluz71/vim-moonfly-colors')
 
+    use('norcalli/nvim-colorizer.lua')
+
     -- Treesitter
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use('nvim-treesitter/playground')
@@ -24,8 +26,6 @@ return require('packer').startup(function(use)
 
     -- Vim fudgitive
     use('tpope/vim-fugitive')
-
-    use('norcalli/nvim-colorizer.lua')
 
     -- LspZero
     use {
