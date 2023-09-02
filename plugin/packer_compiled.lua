@@ -145,6 +145,11 @@ _G.packer_plugins = {
     path = "/Users/jonathan.matta/.local/share/nvim/site/pack/packer/start/quickmark.nvim",
     url = "https://github.com/jmattaa/quickmark.nvim"
   },
+  ["regedit.vim"] = {
+    loaded = true,
+    path = "/Users/jonathan.matta/.local/share/nvim/site/pack/packer/start/regedit.vim",
+    url = "https://github.com/jmattaa/regedit.vim"
+  },
   ["rose-pine"] = {
     loaded = true,
     path = "/Users/jonathan.matta/.local/share/nvim/site/pack/packer/start/rose-pine",
