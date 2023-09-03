@@ -3,7 +3,7 @@ require('rose-pine').setup({
 })
 
 function SetColorScheme(color) -- Color is the selected colorscheme
-	color = color or 'moonfly'
+	color = color or 'rose-pine'
 	vim.cmd.colorscheme(color)
 
     -- Transparent bg
