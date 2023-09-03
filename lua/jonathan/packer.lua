@@ -22,10 +22,9 @@ return require('packer').startup(function(use)
     use('nvim-treesitter/playground')
 
     -- zen mode
-    use('folke/zen-mode.nvim', function ()
-        require('zen-mode').setup{}
+    use('folke/zen-mode.nvim', function()
+        require('zen-mode').setup {}
     end)
-
 
     -- Undotree
     use('mbbill/undotree')
@@ -57,6 +56,55 @@ return require('packer').startup(function(use)
 
     -- Markdown preview
     use('davidgranstrom/nvim-markdown-preview')
+
+    -- Headlines
+    use {
+        'lukas-reineke/headlines.nvim',
+        after = 'nvim-treesitter',
+        config = function()
+            require('headlines').setup {
+                markdown = {
+                    query = vim.treesitter.query.parse(
+                        "markdown",
+                        [[
+                        (atx_heading [
+                            (atx_h1_marker)
+                            (atx_h2_marker)
+                            (atx_h3_marker)
+                            (atx_h4_marker)
+                            (atx_h5_marker)
+                            (atx_h6_marker)
+                        ] @headline)
+
+                        (thematic_break) @dash
+
+                        (fenced_code_block) @codeblock
+
+                        (block_quote_marker) @quote
+                        (block_quote (paragraph (inline (block_continuation) @quote)))
+                    ]]
+                    ),
+                    headline_highlights = { "Headline" },
+                    codeblock_highlight = "CodeBlock",
+                    dash_highlight = "Dash",
+                    dash_string = "-",
+                    quote_highlight = "Quote",
+                    quote_string = "┃",
+                    fat_headlines = false,
+                },
+            }
+        end,
+    }
+
+    -- !This is very important
+    use('WhoIsSethDaniel/toggle-lsp-diagnostics.nvim')
+
+    -- limelight
+    use('junegunn/limelight.vim')
+
+    -- some snippets
+    use('SirVer/ultisnips')
+    use('honza/vim-snippets')
 
     -- My plugins
     use('jmattaa/quickmark.nvim')
