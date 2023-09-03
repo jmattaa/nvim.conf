@@ -21,6 +21,12 @@ return require('packer').startup(function(use)
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use('nvim-treesitter/playground')
 
+    -- zen mode
+    use('folke/zen-mode.nvim', function ()
+        require('zen-mode').setup{}
+    end)
+
+
     -- Undotree
     use('mbbill/undotree')
 
