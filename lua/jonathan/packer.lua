@@ -52,9 +52,6 @@ return require('packer').startup(function(use)
     -- Markdown preview
     use('davidgranstrom/nvim-markdown-preview')
 
-    -- Vimwiki
-    use('vimwiki/vimwiki')
-
     -- My plugins
     use('jmattaa/quickmark.nvim')
     use('jmattaa/regedit.vim')
