@@ -19,3 +19,6 @@ require'nvim-treesitter.configs'.setup {
     additional_vim_regex_highlighting = false,
   },
 }
+
+require'nvim-treesitter.parsers'.get_parser_configs().markdown.used_by = nil
+
