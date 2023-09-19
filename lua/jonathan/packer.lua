@@ -59,6 +59,9 @@ return require('packer').startup(function(use)
     -- markdown
     use('preservim/vim-markdown')
 
+    -- latex
+    use('lervag/vimtex')
+
     -- !This is very important
     use('WhoIsSethDaniel/toggle-lsp-diagnostics.nvim')
 
