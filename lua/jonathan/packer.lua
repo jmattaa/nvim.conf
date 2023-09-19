@@ -15,6 +15,7 @@ return require('packer').startup(function(use)
     use { 'rose-pine/nvim', as = 'rose-pine' }
     use('bluz71/vim-moonfly-colors')
     use('NLKNguyen/papercolor-theme')
+    use('tpope/vim-vividchalk')
 
     use('norcalli/nvim-colorizer.lua')
 
@@ -76,5 +77,5 @@ return require('packer').startup(function(use)
     -- My plugins
     use('jmattaa/quickmark.nvim')
     use('jmattaa/regedit.vim')
-    use('jmattaa/hsark')
+    use('hsark')
 end)
