@@ -14,6 +14,7 @@ return require('packer').startup(function(use)
     -- colors
     use { 'rose-pine/nvim', as = 'rose-pine' }
     use('bluz71/vim-moonfly-colors')
+    use('NLKNguyen/papercolor-theme')
 
     use('norcalli/nvim-colorizer.lua')
 
