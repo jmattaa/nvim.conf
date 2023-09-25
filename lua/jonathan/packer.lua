@@ -14,6 +14,7 @@ return require('packer').startup(function(use)
     -- colors
     use { 'bluz71/vim-moonfly-colors' }
     use { 'rose-pine/nvim', as = 'rose-pine' }
+    use ('jmattaa/hsark')
 
     -- Treesitter
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
