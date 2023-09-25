@@ -47,3 +47,5 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 lsp.setup()
+
+require('toggle_lsp_diagnostics').init()
