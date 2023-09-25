@@ -12,27 +12,19 @@ return require('packer').startup(function(use)
     }
 
     -- colors
+    use { 'bluz71/vim-moonfly-colors' }
     use { 'rose-pine/nvim', as = 'rose-pine' }
-    use('bluz71/vim-moonfly-colors')
-    use('NLKNguyen/papercolor-theme')
-    use('tpope/vim-vividchalk')
-
-    use('norcalli/nvim-colorizer.lua')
 
     -- Treesitter
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use('nvim-treesitter/playground')
-
-    -- zen mode
-    use('folke/zen-mode.nvim', function()
-        require('zen-mode').setup {}
-    end)
 
     -- Undotree
     use('mbbill/undotree')
 
     -- Vim fudgitive
     use('tpope/vim-fugitive')
+
 
     -- LspZero
     use {
@@ -58,27 +50,8 @@ return require('packer').startup(function(use)
 
     -- Markdown preview
     use('davidgranstrom/nvim-markdown-preview')
-    -- markdown
-    use('preservim/vim-markdown')
-
-    -- latex
-    use('lervag/vimtex')
-
-    -- !This is very important
-    use('WhoIsSethDaniel/toggle-lsp-diagnostics.nvim')
-
-    -- limelight
-    use('junegunn/limelight.vim')
-
-    -- some snippets
-    use('SirVer/ultisnips')
-    use('honza/vim-snippets')
 
     -- My plugins
     use('jmattaa/quickmark.nvim')
     use('jmattaa/regedit.vim')
-<<<<<<< HEAD
-=======
-    use('hsark')
->>>>>>> refs/remotes/origin/main
 end)
