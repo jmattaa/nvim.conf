@@ -48,4 +48,3 @@ end)
 
 lsp.setup()
 
-require('toggle_lsp_diagnostics').init()
