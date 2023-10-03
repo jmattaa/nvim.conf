@@ -16,6 +16,7 @@ return require('packer').startup(function(use)
     use('bluz71/vim-moonfly-colors')
     use('NLKNguyen/papercolor-theme')
     use('tpope/vim-vividchalk')
+    use('vimoxide/vim-cinnabar')
 
     use('norcalli/nvim-colorizer.lua')
 
@@ -77,5 +78,5 @@ return require('packer').startup(function(use)
     -- My plugins
     use('jmattaa/quickmark.nvim')
     use('jmattaa/regedit.vim')
-    use('hsark')
+    use('jmattaa/hsark')
 end)
