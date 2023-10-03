@@ -21,7 +21,10 @@ vim.opt.incsearch = true
 
 vim.opt.termguicolors = true
 
+vim.opt.colorcolumn = "80"
+
 vim.wo.cursorline = true
 
 vim.g.mapleader = " "
+
 
