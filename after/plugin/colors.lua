@@ -9,4 +9,4 @@ function SetColorScheme(color) -- Color is the selected colorscheme
     -- vim.api.nvim_set_hl(0, 'StatusLine', {bg = 'none'})
 end
 
-SetColorScheme('cinnabar')
+SetColorScheme('moonfly')
