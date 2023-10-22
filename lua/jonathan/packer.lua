@@ -75,6 +75,9 @@ return require('packer').startup(function(use)
     use('SirVer/ultisnips')
     use('honza/vim-snippets')
 
+    -- fountain for screenwriting
+    use('kblin/vim-fountain')
+
     -- My plugins
     use('jmattaa/quickmark.nvim')
     use('jmattaa/regedit.vim')
