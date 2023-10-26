@@ -17,6 +17,7 @@ return require('packer').startup(function(use)
     use('NLKNguyen/papercolor-theme')
     use('tpope/vim-vividchalk')
     use('vimoxide/vim-cinnabar')
+    use('kdheepak/monochrome.nvim')
 
     use('norcalli/nvim-colorizer.lua')
 
