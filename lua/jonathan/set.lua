@@ -29,4 +29,6 @@ vim.opt.cursorline = true
 
 vim.g.mapleader = " "
 
+-- Remove netrw banner info cuz it be anoying sometimes
+vim.g.netrw_banner = 0
 
