@@ -23,8 +23,8 @@ lsp.setup_nvim_cmp({
 })
 
 vim.diagnostic.config({
-    virtual_text = false,
-    signs = true,
+    virtual_text = true,
+    signs = false,
     update_in_insert = false,
     underline = true,
     severity_sort = false,

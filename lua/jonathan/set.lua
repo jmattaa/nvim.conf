@@ -32,3 +32,6 @@ vim.g.mapleader = " "
 -- Remove netrw banner info cuz it be anoying sometimes
 vim.g.netrw_banner = 0
 
+-- only show statusline when multiple windows (like vim cuz it's good)
+vim.o.laststatus=1
+
