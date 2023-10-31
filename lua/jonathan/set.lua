@@ -23,9 +23,8 @@ vim.opt.termguicolors = true
 
 vim.opt.colorcolumn = "80"
 
-vim.opt.cursorline = false
-
 vim.opt.cursorline = true
+vim.opt.guicursor = "" -- keep insert mode with block cursor
 
 vim.g.mapleader = " "
 
