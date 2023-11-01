@@ -39,8 +39,17 @@ return require('packer').startup(function(use)
         branch = 'v2.x',
         requires = {
             -- LSP Support
-            { 'neovim/nvim-lspconfig' },             -- Required
-            { 'williamboman/mason.nvim' },           -- Optional
+            { 'neovim/nvim-lspconfig' }, -- Required
+            {
+                'williamboman/mason.nvim',
+                opts = {
+                    ensure_installed = {
+                        'clangd',
+                        'clang-format',
+                        'codelldb'
+                    }
+                }
+            },
             { 'williamboman/mason-lspconfig.nvim' }, -- Optional
 
             -- Autocompletion
@@ -75,6 +84,18 @@ return require('packer').startup(function(use)
 
     -- fountain for screenwriting
     use('kblin/vim-fountain')
+
+    -- DAP
+    use {
+        'jay-babu/mason-nvim-dap.nvim',
+        requires = {
+            'williamboman/mason.nvim',
+            'mfussenegger/nvim-dap',
+        }
+    }
+    use('mfussenegger/nvim-dap')
+    use { 'rcarriga/nvim-dap-ui', requires = { 'mfussenegger/nvim-dap' } }
+    use('theHamsta/nvim-dap-virtual-text')
 
     -- My plugins
     use('jmattaa/quickmark.nvim')
