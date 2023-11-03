@@ -1,5 +1,5 @@
 
-./plugin/
+plugin/packer_compiled.lua
 
 # my plugin :>
 .quickmarks
