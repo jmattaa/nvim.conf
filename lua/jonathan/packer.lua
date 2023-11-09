@@ -12,20 +12,12 @@ return require('packer').startup(function(use)
     }
 
     -- colors
-    use { 'rose-pine/nvim', as = 'rose-pine' }
-    use('kdheepak/monochrome.nvim')
+    use('EdenEast/nightfox.nvim')
     use('ellisonleao/gruvbox.nvim')
-
-    use('norcalli/nvim-colorizer.lua')
 
     -- Treesitter
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use('nvim-treesitter/playground')
-
-    -- zen mode
-    use('folke/zen-mode.nvim', function()
-        require('zen-mode').setup {}
-    end)
 
     -- Undotree
     use('mbbill/undotree')
@@ -71,12 +63,6 @@ return require('packer').startup(function(use)
 
     -- latex
     use('lervag/vimtex')
-
-    -- !This is very important
-    use('WhoIsSethDaniel/toggle-lsp-diagnostics.nvim')
-
-    -- limelight
-    use('junegunn/limelight.vim')
 
     -- some snippets
     use('SirVer/ultisnips')

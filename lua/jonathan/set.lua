@@ -1,6 +1,6 @@
 -- Numbers
-vim.opt.nu = true
-vim.opt.relativenumber = true
+vim.opt.nu = false
+vim.opt.relativenumber = false
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
@@ -31,6 +31,6 @@ vim.g.mapleader = " "
 -- Remove netrw banner info cuz it be anoying sometimes
 vim.g.netrw_banner = 0
 
--- only show statusline when multiple windows (like vim cuz it's good)
-vim.o.laststatus=1
+-- global statusline
+vim.o.laststatus=3
 

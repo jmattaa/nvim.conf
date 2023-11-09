@@ -24,7 +24,6 @@ require("gruvbox").setup({
     transparent_mode = true,
 })
 
-
 function SetColorScheme(color) -- Color is the selected colorscheme
     color = color or 'gruvbox'
     vim.o.background = 'dark'
@@ -35,9 +34,6 @@ function SetColorScheme(color) -- Color is the selected colorscheme
     -- vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none' })
     -- Transparent statusline
     -- vim.api.nvim_set_hl(0, 'StatusLine', {bg = 'none'})
-
-    -- cursor underline
-    vim.api.nvim_set_hl(0, 'CursorLine', { underline = true })
 end
 
 SetColorScheme('gruvbox')
