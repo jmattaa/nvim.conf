@@ -1,7 +1,15 @@
+local theme = require('lualine.themes.auto')
+
+-- make the c more subtle
+theme.command.c.bg = theme.normal.c.bg
+theme.command.c.fg = theme.normal.c.fg
+theme.visual.c.bg = theme.normal.c.bg
+theme.visual.c.fg = theme.normal.c.fg
+
 require('lualine').setup {
     options = {
         icons_enabled = true,
-        theme = 'auto',
+        theme = theme,
         component_separators = '',
         section_separators = '',
         disabled_filetypes = {
@@ -20,7 +28,14 @@ require('lualine').setup {
     sections = {
         lualine_a = { 'mode' },
         lualine_b = { 'branch', 'diff' },
-        lualine_c = { '%=',
+        lualine_c = {
+            {
+                'filetype',
+                colored = true,
+                icon_only = false,
+                icon = { align = 'right' },
+            },
+            '%=',
             {
                 'filename',
                 file_status = true,
@@ -54,11 +69,12 @@ require('lualine').setup {
                 icon = ' LSP:',
             }
         },
-        lualine_y = { 'diagnostics', 'filetype' },
+        lualine_y = { 'diagnostics', 'fileformat' },
         lualine_z = { { 'datetime', style = "%H:%M" }, 'location' }
     },
     tabline = {},
-    winbar = {},
+    winbar = {
+    },
     inactive_winbar = {},
     extensions = {},
 }

@@ -20,7 +20,10 @@ return require('packer').startup(function(use)
     use('nvim-treesitter/playground')
 
     -- Lualine
-    use('nvim-lualine/lualine.nvim')
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
 
     -- Undotree
     use('mbbill/undotree')
