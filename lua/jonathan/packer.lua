@@ -31,6 +31,14 @@ return require('packer').startup(function(use)
     -- Vim fudgitive
     use('tpope/vim-fugitive')
 
+    -- oil vim
+    use({
+        "stevearc/oil.nvim",
+        config = function()
+            require("oil").setup()
+        end,
+    })
+
     -- LspZero
     use {
         'VonHeikemen/lsp-zero.nvim',

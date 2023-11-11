@@ -1,7 +1,7 @@
 -- jk to normalmode
 vim.keymap.set("i", "jk", "<ESC>")
 
-vim.keymap.set("n", "<leader>nt", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>nt", ":Oil<CR>")
 vim.keymap.set("n", "<leader>m", ":Mason<CR>")
 
 vim.keymap.set("v", "<leader>k", ":m '<-2<CR>gv=gv")
