@@ -32,16 +32,7 @@ return require('packer').startup(function(use)
     use('tpope/vim-fugitive')
 
     -- oil vim
-    use({
-        "stevearc/oil.nvim",
-        config = function()
-            require("oil").setup({
-                view_options = {
-                    show_hidden = true
-                }
-            })
-        end,
-    })
+    use("stevearc/oil.nvim")
 
     -- LspZero
     use {
