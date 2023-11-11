@@ -22,5 +22,5 @@ vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 -- nice jump files
-vim.keymap.set("n", "<leader>sf", "<C-^>")
+vim.keymap.set("n", "<leader>cf", "<C-^>")
 
