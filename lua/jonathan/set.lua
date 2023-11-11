@@ -1,3 +1,5 @@
+vim.g.mapleader = " "
+
 -- Numbers
 vim.opt.nu = false
 vim.opt.relativenumber = false
@@ -25,8 +27,6 @@ vim.opt.colorcolumn = "80"
 
 vim.opt.cursorline = true
 vim.opt.guicursor = "" -- keep insert mode with block cursor
-
-vim.g.mapleader = " "
 
 -- Remove netrw banner info cuz it be anoying sometimes
 vim.g.netrw_banner = 0
