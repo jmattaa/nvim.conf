@@ -1,15 +1,7 @@
-local theme = require('lualine.themes.auto')
-
--- make the c more subtle
-theme.command.c.bg = theme.normal.c.bg
-theme.command.c.fg = theme.normal.c.fg
-theme.visual.c.bg = theme.normal.c.bg
-theme.visual.c.fg = theme.normal.c.fg
-
 require('lualine').setup {
     options = {
         icons_enabled = true,
-        theme = theme,
+        theme = 'auto',
         component_separators = '',
         section_separators = '',
         disabled_filetypes = {

@@ -17,15 +17,19 @@ require("gruvbox").setup({
     invert_tabline = false,
     invert_intend_guides = false,
     inverse = true, -- invert background for search, diffs, statuslines and errors
-    contrast = "", -- can be "hard", "soft" or empty string
+    contrast = "",  -- can be "hard", "soft" or empty string
     palette_overrides = {},
     overrides = {},
     dim_inactive = false,
     transparent_mode = true,
 })
 
+require('rose-pine').setup({
+    disable_background = true,
+})
+
 function SetColorScheme(color) -- Color is the selected colorscheme
-    color = color or 'gruvbox'
+    color = color or 'rose-pine'
     vim.o.background = 'dark'
     vim.cmd.colorscheme(color)
 
@@ -36,4 +40,4 @@ function SetColorScheme(color) -- Color is the selected colorscheme
     -- vim.api.nvim_set_hl(0, 'StatusLine', {bg = 'none'})
 end
 
-SetColorScheme('gruvbox')
+SetColorScheme()

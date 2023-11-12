@@ -14,6 +14,7 @@ return require('packer').startup(function(use)
     -- colors
     use('EdenEast/nightfox.nvim')
     use('ellisonleao/gruvbox.nvim')
+    use('rose-pine/neovim')
 
     -- Treesitter
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
