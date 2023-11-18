@@ -71,5 +71,3 @@ require('lualine').setup {
     extensions = {},
 }
 
--- global statusline
-vim.o.laststatus = 3

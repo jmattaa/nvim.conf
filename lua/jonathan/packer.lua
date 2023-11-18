@@ -96,6 +96,6 @@ return require('packer').startup(function(use)
     -- My plugins
     use('jmattaa/quickmark.nvim')
     use('jmattaa/regedit.vim')
-    use('/Users/jonathan.matta/Dev/taskr.nvim')
+    use('/home/jonathan/Dev/VimPlugins/taskr.nvim')
     use('jmattaa/hsark')
 end)

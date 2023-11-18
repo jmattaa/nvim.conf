@@ -26,6 +26,11 @@ require("gruvbox").setup({
 
 require('rose-pine').setup({
     disable_background = true,
+    disable_float_background = false,
+    highlight_groups = {
+        ColorColumn = { bg = 'rose', blend = 10 },
+        CursorLine = { bg = 'subtle', blend = 10 },
+    },
 })
 
 function SetColorScheme(color) -- Color is the selected colorscheme
