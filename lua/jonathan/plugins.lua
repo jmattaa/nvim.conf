@@ -31,19 +31,14 @@ return {
     { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
     'nvim-treesitter/playground',
 
-    -- Lualine
     'nvim-lualine/lualine.nvim',
-
-    -- Undotree
     'mbbill/undotree',
-
-    -- Vim fudgitive
     'tpope/vim-fugitive',
-
-    -- oil vim
     'stevearc/oil.nvim',
-
-    -- fountain for screenwriting
+    {
+        'windwp/nvim-autopairs',
+        config = function() require('nvim-autopairs').setup {} end
+    },
     'kblin/vim-fountain',
 
     -- DAP
