@@ -30,6 +30,13 @@ require('rose-pine').setup({
     highlight_groups = {
         ColorColumn = { bg = 'rose', blend = 10 },
         CursorLine = { bg = 'subtle', blend = 10 },
+
+        TelescopeBorder = { fg = "highlight_high", bg = "none" },
+        TelescopeNormal = { bg = "none" },
+        TelescopePromptNormal = { bg = "none" },
+        TelescopeResultsNormal = { fg = "subtle", bg = "none" },
+        TelescopeSelection = { fg = "text", bg = "none" },
+        TelescopeSelectionCaret = { fg = "rose", bg = "rose" },
     },
 })
 
