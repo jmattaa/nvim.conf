@@ -5,25 +5,17 @@ return {
         branch = 'v2.x',
         dependencies = {
             -- LSP Support
-            { 'neovim/nvim-lspconfig' }, -- Required
-            {
-                'williamboman/mason.nvim',
-                opts = {
-                    ensure_installed = {
-                        'clangd',
-                        'clang-format',
-                        'codelldb'
-                    }
-                }
-            },
-            { 'williamboman/mason-lspconfig.nvim' }, -- Optional
+            'neovim/nvim-lspconfig',             -- Required
+            'williamboman/mason.nvim',
+            'williamboman/mason-lspconfig.nvim', -- Optional
 
             -- Autocompletion
-            { 'hrsh7th/nvim-cmp' },     -- Required
-            { 'hrsh7th/cmp-nvim-lsp' }, -- Required
-            { 'L3MON4D3/LuaSnip' },     -- Required
+            'hrsh7th/nvim-cmp',     -- Required
+            'hrsh7th/cmp-nvim-lsp', -- Required
+            'L3MON4D3/LuaSnip',     -- Required
         }
     },
+
     {
         'nvim-telescope/telescope.nvim',
         tag = '0.1.2',
@@ -50,18 +42,6 @@ return {
 
     -- oil vim
     'stevearc/oil.nvim',
-
-    -- Markdown preview
-    'davidgranstrom/nvim-markdown-preview',
-    -- markdown
-    'preservim/vim-markdown',
-
-    -- latex
-    'lervag/vimtex',
-
-    -- some snippets
-    'SirVer/ultisnips',
-    'honza/vim-snippets',
 
     -- fountain for screenwriting
     'kblin/vim-fountain',
