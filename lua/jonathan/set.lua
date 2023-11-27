@@ -28,6 +28,4 @@ vim.opt.colorcolumn = "80"
 vim.opt.cursorline = true
 vim.opt.guicursor = "" -- keep insert mode with block cursor
 
--- Remove netrw banner info cuz it be anoying sometimes
-vim.g.netrw_banner = 0
-
+vim.opt.cmdheight=0
