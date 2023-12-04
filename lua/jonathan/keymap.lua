@@ -24,3 +24,5 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 -- nice jump files
 vim.keymap.set("n", "<leader>cf", "<C-^>")
 
+-- create file if not existing gf
+vim.keymap.set("n", "gf", ":e <cfile><CR>", { silent = true })
