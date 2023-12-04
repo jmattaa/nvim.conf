@@ -27,6 +27,14 @@ return {
     'ellisonleao/gruvbox.nvim',
     'rose-pine/neovim',
 
+    -- leap
+    {
+        'ggandor/leap.nvim',
+        config = function()
+            require('leap').add_default_mappings()
+        end
+    },
+
     -- Treesitter
     { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
     'nvim-treesitter/playground',
