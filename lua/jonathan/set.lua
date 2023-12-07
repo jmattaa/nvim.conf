@@ -28,3 +28,5 @@ vim.opt.colorcolumn = "80"
 vim.opt.cursorline = true
 vim.opt.guicursor = "" -- keep insert mode with block cursor
 
+-- global stautsline
+vim.opt.laststatus=3
