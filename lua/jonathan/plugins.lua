@@ -23,8 +23,6 @@ return {
     },
 
     -- colors
-    'EdenEast/nightfox.nvim',
-    'ellisonleao/gruvbox.nvim',
     'rose-pine/neovim',
 
     -- leap
@@ -39,7 +37,6 @@ return {
     { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
     'nvim-treesitter/playground',
 
-    'nvim-lualine/lualine.nvim',
     'mbbill/undotree',
     'tpope/vim-fugitive',
     'stevearc/oil.nvim',
@@ -47,23 +44,12 @@ return {
         'windwp/nvim-autopairs',
         config = function() require('nvim-autopairs').setup {} end
     },
-    'kblin/vim-fountain',
-
-    -- DAP
-    {
-        'jay-babu/mason-nvim-dap.nvim',
-        dependencies = {
-            'williamboman/mason.nvim',
-            'mfussenegger/nvim-dap',
-        }
-    },
-    'mfussenegger/nvim-dap',
-    { 'rcarriga/nvim-dap-ui',            dependencies = { 'mfussenegger/nvim-dap' } },
-    'theHamsta/nvim-dap-virtual-text',
 
     -- My plugins
-    'jmattaa/quickmark.nvim',
+    -- only using regedit 
+    -- cuz dats the only kinda useful
+    -- 'jmattaa/quickmark.nvim',
     'jmattaa/regedit.vim',
-    { dir = '/home/jonathan/Dev/VimPlugins/taskr.nvim' },
-    'jmattaa/hsark',
+    -- { dir = '/home/jonathan/Dev/VimPlugins/taskr.nvim' },
+    -- 'jmattaa/hsark',
 }
