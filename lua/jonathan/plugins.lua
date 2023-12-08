@@ -24,6 +24,7 @@ return {
 
     -- colors
     'rose-pine/neovim',
+    'ellisonleao/gruvbox.nvim',
 
     -- leap
     {
