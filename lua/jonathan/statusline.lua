@@ -118,7 +118,6 @@ Statusline.active = function()
         update_mode_colors(),
         mode(),
         lsp(),
-        "%=",
         "%#Constant#",
         filepath(),
         filename(),
