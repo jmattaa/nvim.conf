@@ -40,7 +40,6 @@ return {
 
     'mbbill/undotree',
     'tpope/vim-fugitive',
-    'stevearc/oil.nvim',
     {
         'windwp/nvim-autopairs',
         config = function() require('nvim-autopairs').setup {} end

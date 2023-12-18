@@ -62,6 +62,10 @@ local function filename()
     return fname .. " "
 end
 
+local function absfilepath()
+    return "%F"
+end
+
 local function filetype()
     return string.format(" %s ", vim.bo.filetype)
 end
@@ -124,15 +128,14 @@ Statusline.active = function()
         "%#Identifier#",
         lineinfo(),
         "%#String#",
-        os.date("%H:%M", os.time()) .. " %#Normal#",
     }
 end
 
-function Statusline.oil()
+Statusline.explorer = function()
     return table.concat {
-        "%#Normal#%=",
-        " ",
-        string.sub(filepath(), 10), -- remove oil:// cuz it be anoying sometimes
+        "%#Normal#",
+        "%=",
+        absfilepath(),
         "%=",
     }
 end
@@ -140,7 +143,7 @@ end
 vim.api.nvim_exec([[
     augroup Statusline
     au!
-    au FileType oil setlocal statusline=%!v:lua.Statusline.oil()
+    au FileType netrw setlocal statusline=%!v:lua.Statusline.explorer()
     au BufEnter * setlocal statusline=%!v:lua.Statusline.active()
     au BufWinEnter * setlocal statusline=%!v:lua.Statusline.active()
     augroup END
