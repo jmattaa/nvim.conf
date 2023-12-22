@@ -1,6 +1,3 @@
--- jk to normalmode
-vim.keymap.set("i", "jk", "<ESC>")
-
 vim.keymap.set("n", "<leader>nt", ":Explore<CR>", { silent = true })
 vim.keymap.set("n", "<leader>m", ":Mason<CR>")
 
