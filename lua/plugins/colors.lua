@@ -2,7 +2,7 @@ return {
     {
         "ellisonleao/gruvbox.nvim",
         lazy = false,
-        name = "colors",
+        name = "gruvbox",
 
         config = function()
             require("gruvbox").setup({
@@ -49,6 +49,23 @@ return {
                     TelescopeSelection = { fg = "text", bg = "none" },
                     TelescopeSelectionCaret = { fg = "rose", bg = "rose" },
                 },
+            })
+        end
+    },
+    {
+        "miikanissi/modus-themes.nvim",
+        config = function()
+            require('modus-themes').setup({
+                style = "auto",
+                transparent = true,
+                dim_inactive = false,
+                styles = {
+                    comments = { italic = true },
+                    keywords = { italic = true },
+                    functions = {},
+                    variables = {},
+                },
+
             })
         end
     }

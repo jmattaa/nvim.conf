@@ -4,4 +4,4 @@ require("jonathan.statusline")
 require("jonathan.lazy")
 
 -- set our colorscheme
-require("jonathan.colorscheme").SetColorScheme("rose-pine")
+require("jonathan.colorscheme").SetColorScheme("modus")
