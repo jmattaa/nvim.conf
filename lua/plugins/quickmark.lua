@@ -1,0 +1,3 @@
+return {
+    'jmattaa/quickmark.nvim'
+}
