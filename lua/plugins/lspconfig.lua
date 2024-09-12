@@ -21,7 +21,6 @@ return {
 
             lsp.ensure_installed({
                 "lua_ls",
-                "tsserver",
                 "eslint",
                 "clangd",
             })
