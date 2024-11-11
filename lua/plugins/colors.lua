@@ -6,7 +6,7 @@ return {
 
         config = function()
             require("gruvbox").setup({
-                terminal_colors = true, -- add neovim terminal colors
+                terminal_colors = true,
                 undercurl = true,
                 underline = true,
                 bold = true,
@@ -22,12 +22,14 @@ return {
                 invert_signs = false,
                 invert_tabline = false,
                 invert_intend_guides = false,
-                inverse = true, -- invert background for search, diffs, statuslines and errors
-                contrast = "",  -- can be "hard", "soft" or empty string
-                palette_overrides = {},
+                inverse = true,
+                contrast = "hard",
+                palette_overrides = {
+                    dark0_hard = "#191919"
+                },
                 overrides = {},
                 dim_inactive = false,
-                transparent_mode = true,
+                transparent_mode = false,
             })
         end,
     },
