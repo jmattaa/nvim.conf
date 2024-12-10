@@ -1,3 +1,6 @@
+-- RELOAD CONFIG
+vim.keymap.set("n", "<leader>rr", ":source $MYVIMRC<CR>")
+
 vim.keymap.set("n", "<leader>nt", ":Explore<CR>", { silent = true })
 
 -- so we stay in visual mode when indenting

@@ -1,4 +1,4 @@
 require"jonathan.set"
 require"jonathan.keymap"
 require"jonathan.lazy"
-require"jonathan.color".setColorScheme("gruvbox")
+require"jonathan.color".setColorScheme("modus")

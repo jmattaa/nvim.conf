@@ -1,65 +1,10 @@
 return {
     {
-        "ellisonleao/gruvbox.nvim",
-        lazy = false,
-        name = "gruvbox",
-
-        config = function()
-            require("gruvbox").setup({
-                terminal_colors = true,
-                undercurl = true,
-                underline = true,
-                bold = true,
-                italic = {
-                    strings = true,
-                    emphasis = true,
-                    comments = true,
-                    operators = false,
-                    folds = true,
-                },
-                strikethrough = true,
-                invert_selection = false,
-                invert_signs = false,
-                invert_tabline = false,
-                invert_intend_guides = false,
-                inverse = true,
-                contrast = "hard",
-                palette_overrides = {
-                    dark0_hard = "#191919"
-                },
-                overrides = {},
-                dim_inactive = false,
-                transparent_mode = false,
-            })
-        end,
-    },
-    {
-        "rose-pine/neovim",
-        name = "rose-pine",
-        config = function()
-            require('rose-pine').setup({
-                disable_background = true,
-                disable_float_background = false,
-                highlight_groups = {
-                    ColorColumn = { bg = 'rose', blend = 10 },
-                    CursorLine = { bg = 'subtle', blend = 10 },
-
-                    TelescopeBorder = { fg = "highlight_high", bg = "none" },
-                    TelescopeNormal = { bg = "none" },
-                    TelescopePromptNormal = { bg = "none" },
-                    TelescopeResultsNormal = { fg = "subtle", bg = "none" },
-                    TelescopeSelection = { fg = "text", bg = "none" },
-                    TelescopeSelectionCaret = { fg = "rose", bg = "rose" },
-                },
-            })
-        end
-    },
-    {
         "miikanissi/modus-themes.nvim",
         config = function()
             require('modus-themes').setup({
                 style = "auto",
-                transparent = true,
+                transparent = false,
                 dim_inactive = false,
                 styles = {
                     comments = { italic = true },
@@ -70,5 +15,5 @@ return {
 
             })
         end
-    }
+    },
 }
