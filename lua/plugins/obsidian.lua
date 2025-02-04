@@ -9,6 +9,9 @@ return {
                 name = "yeh",
                 path = "/Users/jonathan/Documents/yeh"
             }
+        },
+        ui = {
+            enable = false -- cuz we be using render-markdown.nvim
         }
     }
 }

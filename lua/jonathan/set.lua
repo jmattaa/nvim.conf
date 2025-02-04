@@ -29,3 +29,5 @@ vim.opt.fillchars = "vert:|,horiz:━"
 
 -- remove the netrw info stuff cuz it be anoying sometimes
 vim.g.netrw_banner = 0
+
+vim.opt.conceallevel = 2
