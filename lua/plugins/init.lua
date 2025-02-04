@@ -1,4 +1,6 @@
 return {
+    'folke/zen-mode.nvim',
+    '3rd/image.nvim',
     {
         'windwp/nvim-autopairs',
         config = true
