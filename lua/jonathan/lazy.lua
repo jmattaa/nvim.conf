@@ -11,4 +11,11 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-return require("lazy").setup("plugins", {})
+return require("lazy").setup("plugins", {
+    rocks = {
+        enabled = true,
+        root = vim.fn.stdpath("data") .. "/lazy-rocks",
+        server = "https://nvim-neorocks.github.io/rocks-binaries/",
+        hererocks = nil,
+    },
+})
