@@ -4,6 +4,7 @@ return {
         'windwp/nvim-autopairs',
         config = true
     },
+    'Exafunction/codeium.vim',
     {
         'mvllow/modes.nvim',
         config = function()
@@ -11,5 +12,4 @@ return {
                 line_opacity = 0.30,
             })
         end
-    }
-}
+    }}
