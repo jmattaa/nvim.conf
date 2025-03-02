@@ -1,6 +1,6 @@
 return {
     {
-        dir = "~/dev/VimPlugins/quickmark.nvim",
+        "jmattaa/quickmark.nvim",
         config = function ()
             require"quickmark".setup({
                 messages = false,
