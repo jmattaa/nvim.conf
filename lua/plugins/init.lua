@@ -12,4 +12,6 @@ return {
                 line_opacity = 0.30,
             })
         end
-    }}
+    },
+    'tpope/vim-fugitive',
+}
