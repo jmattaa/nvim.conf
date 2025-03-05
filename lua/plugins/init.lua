@@ -18,5 +18,16 @@ return {
         opts = {
             processor = "magick_cli" -- TODO: FIX THIS find a way to use magick_rock instead
         }
-    }
+    },
+    {
+        "nvim-treesitter/nvim-treesitter",
+        config = function()
+            require("nvim-treesitter.configs").setup {
+                auto_install = true,
+                highlight = {
+                    enable = true,
+                }
+            }
+        end
+    },
 }
