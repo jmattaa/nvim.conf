@@ -1,4 +1,4 @@
-require"jonathan.set"
-require"jonathan.keymap"
-require"jonathan.lazy"
-require"jonathan.color".setColorScheme("gruvbox")
+require "jmattaa.set"
+require "jmattaa.keymaps"
+require "jmattaa.lazy"
+require "jmattaa.color".setColorscheme("gruvbox")

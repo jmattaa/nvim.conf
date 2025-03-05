@@ -1,4 +1,4 @@
-local function setColorScheme(color)
+local function setColorscheme(color)
     color = color or 'default'
     vim.o.background = 'dark'
     vim.cmd.colorscheme(color)
@@ -11,5 +11,5 @@ local function setColorScheme(color)
 end
 
 return {
-    setColorScheme = setColorScheme
+    setColorscheme = setColorscheme
 }
