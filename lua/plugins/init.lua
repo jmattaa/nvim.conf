@@ -4,6 +4,7 @@ return {
         config = true
     },
     "Exafunction/codeium.vim",
+    "preservim/vim-pencil",
     {
         "mvllow/modes.nvim",
         config = function()
