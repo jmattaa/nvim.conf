@@ -17,12 +17,10 @@ return {
         end
     },
     {
-        "ellisonleao/gruvbox.nvim",
-        config = function()
-            require("gruvbox").setup({
-                contrast = "hard",
-                transparent_mode = true
-            })
+        "morhetz/gruvbox",
+        config = function ()
+            vim.g.gruvbox_contrast_dark = "medium"
+            vim.g.gruvbox_sign_column = "bg0"
         end
     }
 }
