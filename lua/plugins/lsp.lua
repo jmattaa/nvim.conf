@@ -26,26 +26,31 @@ return {
             })
 
             local cmp = require("cmp")
+            cmp.setup({
+                window = {
+                    completion = {
+                        scrollbar = false,
+                        border = "rounded",
+                        winhighlight = "Normal:Normal,FloatBorder:Normal",
+                    },
+                    documentation = {
+                        scrollbar = false,
+                        border = "rounded",
+                        winhighlight = "Normal:Normal,FloatBorder:Normal",
+                    },
+                }
+            })
             local cmp_select = { behavior = cmp.SelectBehavior.Select }
             local cmp_mappings = lsp.defaults.cmp_mappings({
                 ["<C-p>"] = cmp.mapping.select_prev_item(cmp_select),
                 ["<C-n>"] = cmp.mapping.select_next_item(cmp_select),
-                ["<Tab>"] = cmp.mapping.confirm({ select = true }),
-                ["<C-Space>"] = cmp.mapping.complete(),
+                ["<C-u>"] = cmp.mapping.confirm({ select = true }),
+                ["<Tab>"] = vim.NIL,   -- idk but normal nil dosen't work here
+                ["<S-Tab>"] = vim.NIL, -- so we gotta use vim.NIL
             })
-            cmp_mappings["<S-Tab>"] = nil
 
             lsp.setup_nvim_cmp({
                 mapping = cmp_mappings,
-            })
-
-            vim.diagnostic.config({
-                virtual_text = false,
-                signs = true,
-                update_in_insert = false,
-                underline = true,
-                severity_sort = false,
-                float = true,
             })
 
             lsp.on_attach(function(client, bufnr)
