@@ -16,14 +16,4 @@ return {
             })
         end
     },
-    {
-        "ellisonleao/gruvbox.nvim",
-        config = function()
-            require("gruvbox").setup({
-                overrides = {
-                    SignColumn = { bg = "none" }
-                }
-            })
-        end
-    }
 }
