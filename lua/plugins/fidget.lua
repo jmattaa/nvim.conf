@@ -5,7 +5,6 @@ return {
             override_vim_notify = true,
             window = {
                 normal_hl = "Normal",
-                border = "rounded",
             },
         },
         logger = {
