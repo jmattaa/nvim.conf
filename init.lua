@@ -13,6 +13,20 @@ vim.api.nvim_create_user_command("Jcmd", function(opts)
         return
     end
 
-    wutils.open_floating()
-    vim.fn.termopen(cmd)
+
+    local wininfo = wutils.open_floating()
+    local bufnr = wininfo.buf
+    local winnr = wininfo.win
+
+    vim.cmd("terminal " .. cmd)
+    vim.cmd("startinsert")
+
+    -- automatically close the window when the command finishes
+    vim.api.nvim_create_autocmd("TermClose", {
+        buffer = bufnr,
+        once = true,
+        callback = function()
+            vim.api.nvim_win_close(winnr, true)
+        end
+    })
 end, { nargs = "?" })
