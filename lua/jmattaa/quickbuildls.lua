@@ -2,7 +2,7 @@ local client = vim.lsp.start_client({
     name = "quickbuildls",
     cmd = {
         "sh", "-c",
-        -- be sure to create a quickbuildls synlink
+        -- be sure to create a quickbuildls symlink
         "$HOME/quickbuildls 2>> /tmp/quickbuildls.log"
     },
 })
