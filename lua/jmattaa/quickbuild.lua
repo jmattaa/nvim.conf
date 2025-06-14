@@ -1,3 +1,5 @@
+-- for the quickbuildls and the syntax highlighting for quickbuild
+
 local client = vim.lsp.start_client({
     name = "quickbuildls",
     cmd = {
@@ -16,6 +18,11 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
     pattern = { "quickbuild" },
     callback = function(args)
         local bufnr = args.buf
+
+        -- hilighting
+        vim.bo.filetype = "quickbuild"
+
+        -- lsp
         local ok = vim.lsp.buf_attach_client(bufnr, client)
         if ok then
             vim.notify("Attached quickbuildls", vim.log.levels.INFO)
