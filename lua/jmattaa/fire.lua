@@ -49,6 +49,7 @@ function M.setup(opts)
                 vim.api.nvim_command('botright split')
                 vim.cmd("resize 10")
                 vim.cmd("term " .. command_to_run)
+                vim.cmd("setlocal bufhidden=wipe")
             else
                 vim.notify("Command '" .. v .. "' not found in .firecmds", vim.log.levels.ERROR)
             end
