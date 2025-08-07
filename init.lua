@@ -4,8 +4,6 @@ require "jmattaa.lazy"
 require "jmattaa.quickbuild"
 require "jmattaa.color".setColorscheme("moonfly")
 
-require "jmattaa.fire".setup()
-
 local todo = require("jmattaa.todo")
 vim.api.nvim_create_user_command("JTodo", todo.toggle, {})
 
