@@ -1,9 +1,4 @@
-return {
-    {
-        "bluz71/vim-moonfly-colors",
-        name = "moonfly",
-        lazy = false,
-        priority = 1000
-    },
-    "nikolvs/vim-sunbather",
-}
+vim.pack.add({
+    "https://github.com/vague2k/vague.nvim"
+})
+vim.cmd[[colorscheme vague]]

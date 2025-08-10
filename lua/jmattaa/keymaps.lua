@@ -14,5 +14,3 @@ vim.keymap.set("v", "<leader>y", "\"+y")
 -- nice change file stuff
 vim.keymap.set("n", "<leader>cf", "<C-^>")
 
--- todo shi
-vim.keymap.set("n", "<leader>tt", ":JTodo<CR>")

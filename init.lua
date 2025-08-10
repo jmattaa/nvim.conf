@@ -1,8 +1,9 @@
+-- NOTE!!!!!
+-- this config only works for neovim 0.12 (currently it's nightly)
+-- use bob to install it 
+-- https://github.com/MordechaiHadad/bob
 require "jmattaa.set"
 require "jmattaa.keymaps"
-require "jmattaa.lazy"
-require "jmattaa.quickbuild"
-require "jmattaa.color".setColorscheme("sunbather")
+require "plugins"
 
-local todo = require("jmattaa.todo")
-vim.api.nvim_create_user_command("JTodo", todo.toggle, {})
+require "jmattaa.quickbuild"
