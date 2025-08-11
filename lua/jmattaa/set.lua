@@ -17,6 +17,8 @@ vim.o.colorcolumn = "80"
 vim.o.cursorline = true
 vim.o.guicursor = "" -- keep insert mode with block cursor
 
+vim.o.winborder = "rounded"
+
 -- yeh cuz vim looks better
 vim.o.fillchars = "vert:|,horiz:━"
 
