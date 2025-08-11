@@ -19,12 +19,18 @@ require("lazydev").setup {
 require("mason").setup()
 require("mason-lspconfig").setup()
 
+vim.api.nvim_create_autocmd("InsertCharPre", {
+    callback = function()
+        vim.lsp.completion.get()
+    end
+})
+
 vim.api.nvim_create_autocmd("LspAttach", {
     callback = function(args)
         local client = vim.lsp.get_client_by_id(args.data.client_id)
         if not client then return end
 
-        vim.o.completeopt = "menu,menuone,popup,fuzzy,noinsert"
+        vim.o.completeopt = "menu,menuone,preview,fuzzy,noinsert"
         vim.lsp.completion.enable(
             true,
             client.id,
