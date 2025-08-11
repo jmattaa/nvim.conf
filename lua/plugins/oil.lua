@@ -1,6 +1,6 @@
-vim.pack.add({    
+vim.pack.add {
     "https://github.com/stevearc/oil.nvim"
-})
+}
 
 require("oil").setup({
     view_options = {

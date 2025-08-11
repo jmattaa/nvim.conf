@@ -1,5 +1,13 @@
-vim.pack.add({
-    "https://github.com/vague2k/vague.nvim"
-})
+vim.pack.add {
+    "https://github.com/rebelot/kanagawa.nvim"
+}
 
-vim.cmd[[colorscheme vague]]
+---@diagnostic disable-next-line: missing-fields
+require("kanagawa").setup {
+    transparent = true,
+    background = {
+        dark = "dragon"
+    }
+}
+
+vim.cmd [[colorscheme kanagawa]]

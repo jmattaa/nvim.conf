@@ -1,13 +1,13 @@
-vim.pack.add({
+vim.pack.add {
     "https://github.com/echasnovski/mini.pick"
-})
+}
 
 
 local MiniPick = require "mini.pick"
 MiniPick.setup {
     mappings = {
-        mark_all = "<C-a>", -- default 
-        choose_marked = "<M-CR>", -- default 
+        mark_all = "<C-a>",       -- default
+        choose_marked = "<M-CR>", -- default
         open_quickfix_list = {
             char = "<C-q>",
             func = function()
