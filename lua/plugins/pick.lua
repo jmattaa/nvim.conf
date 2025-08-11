@@ -1,5 +1,5 @@
 vim.pack.add {
-    "https://github.com/echasnovski/mini.pick"
+    "https://github.com/echasnovski/mini.pick",
 }
 
 
