@@ -1,10 +1,11 @@
 vim.pack.add {
     "https://github.com/neovim/nvim-lspconfig",
+
     "https://github.com/mason-org/mason.nvim",
     "https://github.com/mason-org/mason-lspconfig.nvim",
+
     "https://github.com/folke/lazydev.nvim",
 
-    -- treesitter should it be here?
     "https://github.com/nvim-treesitter/nvim-treesitter",
 }
 
@@ -37,6 +38,10 @@ vim.api.nvim_create_autocmd("LspAttach", {
             args.buf,
             { autotrigger = true }
         )
+
+        -- map <CR> to not accept the completion and instead be NORMAL!!!!
+        -- <C-e> stops the completion and <CR> inserts a newline as it should
+        vim.cmd [[inoremap <expr> <CR> pumvisible() ? "<C-e><CR>" : "<CR>"]]
 
         local opts = { buffer = args.buf }
         vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
