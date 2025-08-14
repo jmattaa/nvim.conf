@@ -20,4 +20,4 @@ vim.o.winborder = "rounded"
 -- yeh cuz vim looks better
 vim.o.fillchars = "vert:|,horiz:~"
 vim.o.cmdheight = 0
-vim.o.laststatus = 3
+vim.o.laststatus = 1
