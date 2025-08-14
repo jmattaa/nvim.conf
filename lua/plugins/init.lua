@@ -8,7 +8,7 @@ vim.pack.add {
     "https://github.com/Exafunction/codeium.vim",
     "https://github.com/tpope/vim-fugitive",
     "https://github.com/windwp/nvim-autopairs",
-    "https://github.com/jmattaa/fire.nvim",
+    { src = "/Users/jonathan/dev/fire.nvim/", name = "fire.nvim" },
 }
 
 require("nvim-autopairs").setup {}
