@@ -19,5 +19,5 @@ vim.o.guicursor = "" -- keep insert mode with block cursor
 vim.o.winborder = "rounded"
 -- yeh cuz vim looks better
 vim.o.fillchars = "vert:|,horiz:~"
-vim.o.cmdheight = 0
+vim.o.cmdheight = 1
 vim.o.laststatus = 1
