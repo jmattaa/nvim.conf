@@ -1,0 +1,52 @@
+{
+  "plugins": {
+    "codeium.vim": {
+      "rev": "a8d47ec54fe82df920b2545559f767003e8a7f8d",
+      "src": "https://github.com/Exafunction/codeium.vim"
+    },
+    "fidget.nvim": {
+      "rev": "dafd592c7bdbb6cd6d17d3c9a1a8abf3930138c1",
+      "src": "https://github.com/j-hui/fidget.nvim"
+    },
+    "fire.nvim": {
+      "rev": "5424943eebd6185432b802886835a89b97de9aca",
+      "src": "https://github.com/jmattaa/fire.nvim"
+    },
+    "lazydev.nvim": {
+      "rev": "2367a6c0a01eb9edb0464731cc0fb61ed9ab9d2c",
+      "src": "https://github.com/folke/lazydev.nvim"
+    },
+    "mason-lspconfig.nvim": {
+      "rev": "7f0bf635082bb9b7d2b37766054526a6ccafdb85",
+      "src": "https://github.com/mason-org/mason-lspconfig.nvim"
+    },
+    "mason.nvim": {
+      "rev": "7dc4facca9702f95353d5a1f87daf23d78e31c2a",
+      "src": "https://github.com/mason-org/mason.nvim"
+    },
+    "mini.pick": {
+      "rev": "82ec629ca108c7b96b8b9bb733d235b39e137690",
+      "src": "https://github.com/echasnovski/mini.pick"
+    },
+    "nvim-autopairs": {
+      "rev": "23320e75953ac82e559c610bec5a90d9c6dfa743",
+      "src": "https://github.com/windwp/nvim-autopairs"
+    },
+    "nvim-lspconfig": {
+      "rev": "d6dc63670d3dc5204b1e874af4cbf340cb5d9d18",
+      "src": "https://github.com/neovim/nvim-lspconfig"
+    },
+    "nvim-treesitter": {
+      "rev": "42fc28ba918343ebfd5565147a42a26580579482",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter"
+    },
+    "oil.nvim": {
+      "rev": "bbad9a76b2617ce1221d49619e4e4b659b3c61fc",
+      "src": "https://github.com/stevearc/oil.nvim"
+    },
+    "vague.nvim": {
+      "rev": "087ff41d1b4d90e7b64e1c97860700fa6b7f0daf",
+      "src": "https://github.com/vague2k/vague.nvim"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 -- for the quickbuildls and the syntax highlighting for quickbuild
 vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
-    pattern = { "quickbuild" },
+    pattern = { "quickbuild", "qvickbuild" },
     callback = function(args)
         local clients = vim.lsp.get_clients({ name = "quickbuildls" })
 
@@ -25,7 +25,7 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
         local bufnr = args.buf
 
         -- hilighting
-        vim.bo.filetype = "quickbuild"
+        vim.bo.filetype = "qvickbuild"
 
         -- lsp
         local ok = vim.lsp.buf_attach_client(bufnr, client_id)

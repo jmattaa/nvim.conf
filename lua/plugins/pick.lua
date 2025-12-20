@@ -30,3 +30,26 @@ vim.keymap.set("n", "<leader>ff", ":Pick files<CR>")
 vim.keymap.set("n", "<leader>fg", ":Pick grep_live<CR>")
 vim.keymap.set("n", "<leader>fh", ":Pick help<CR>")
 vim.keymap.set("n", "<leader>fG", ":Pick files tool='git'<CR>")
+
+-- uncommited files
+vim.keymap.set("n", "<leader>fu", function()
+    local items = vim.fn.systemlist("git diff --name-only")
+
+    if #items == 0 then
+        vim.notify("No uncommitted files", vim.log.levels.INFO)
+        return
+    end
+
+    -- filter out current file
+    local current = vim.fn.fnamemodify(vim.fn.expand("%"), ":.")
+    items = vim.tbl_filter(function(file)
+        return file ~= current
+    end, items)
+
+    MiniPick.start({
+        source = {
+            items = items,
+            name = "Uncommited files",
+        }
+    })
+end)

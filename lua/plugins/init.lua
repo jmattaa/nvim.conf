@@ -10,8 +10,6 @@ vim.pack.add {
     "https://github.com/jmattaa/fire.nvim",
 }
 
-require("fire").setup {
-    size = 10,
-}
+require("fire").setup {}
 
 require("nvim-autopairs").setup {}
