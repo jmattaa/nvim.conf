@@ -7,4 +7,4 @@ require "jmattaa.keymaps"
 require "plugins"
 
 require "jmattaa.vim-pack"
-require "jmattaa.quickbuild"
+require "jmattaa.qvickbuild"
