@@ -1,9 +1,9 @@
 vim.pack.add({
-    "https://github.com/vague2k/vague.nvim"
+    "https://github.com/vague2k/vague.nvim",
+    "https://github.com/ellisonleao/gruvbox.nvim"
 })
 
-require("vague").setup {
-    transparent=true,
-}
+require("vague").setup { transparent = true, }
+require("gruvbox").setup { transparent_mode = true }
 
-vim.cmd.colorscheme "vague"
+vim.cmd.colorscheme "gruvbox"

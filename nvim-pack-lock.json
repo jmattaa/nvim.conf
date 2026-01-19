@@ -12,6 +12,10 @@
       "rev": "5424943eebd6185432b802886835a89b97de9aca",
       "src": "https://github.com/jmattaa/fire.nvim"
     },
+    "gruvbox.nvim": {
+      "rev": "a472496e1a4465a2dd574389dcf6cdb29af9bf1b",
+      "src": "https://github.com/ellisonleao/gruvbox.nvim"
+    },
     "lazydev.nvim": {
       "rev": "2367a6c0a01eb9edb0464731cc0fb61ed9ab9d2c",
       "src": "https://github.com/folke/lazydev.nvim"
