@@ -1,6 +1,5 @@
 require "plugins.lsp"
 require "plugins.colors"
-require "plugins.oil"
 require "plugins.pick"
 require "plugins.fidget"
 

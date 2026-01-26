@@ -21,3 +21,6 @@ vim.o.winborder = "rounded"
 vim.o.fillchars = "vert:|,horiz:~"
 vim.o.cmdheight = 1
 vim.o.laststatus = 1
+
+-- Remove netrw banner info cuz it be anoying sometimes
+vim.g.netrw_banner = 0
