@@ -55,6 +55,14 @@
     "vague.nvim": {
       "rev": "087ff41d1b4d90e7b64e1c97860700fa6b7f0daf",
       "src": "https://github.com/vague2k/vague.nvim"
+    },
+    "vim": {
+      "rev": "e3d5b7d9711c7ebbf12c63c2345116985656da0d",
+      "src": "https://github.com/challenger-deep-theme/vim"
+    },
+    "vim-256noir": {
+      "rev": "e8668a18a4a90272c1cae87e655f8bddc5ac3665",
+      "src": "https://github.com/andreasvc/vim-256noir"
     }
   }
 }

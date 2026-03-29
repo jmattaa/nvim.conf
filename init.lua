@@ -1,5 +1,5 @@
 -- NOTE!!!!!
--- this config only works for neovim 0.12 (currently it's nightly)
+-- this config only works for neovim 0.12 or higher
 -- use bob to install it 
 -- https://github.com/MordechaiHadad/bob
 require "jmattaa.set"
