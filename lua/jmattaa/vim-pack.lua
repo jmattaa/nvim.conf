@@ -8,3 +8,4 @@ function PackClean()
 end
 
 vim.keymap.set("n", "<leader>pc", ":lua PackClean()<CR>")
+vim.keymap.set("n", "<leader>pu", ":lua vim.pack.update()<CR>")
