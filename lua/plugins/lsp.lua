@@ -5,8 +5,6 @@ vim.pack.add {
     "https://github.com/mason-org/mason-lspconfig.nvim",
 
     "https://github.com/folke/lazydev.nvim",
-
-    "https://github.com/nvim-treesitter/nvim-treesitter",
 }
 
 require("lazydev").setup {
@@ -54,12 +52,3 @@ vim.api.nvim_create_autocmd("LspAttach", {
         vim.keymap.set("i", "<C-h>", vim.lsp.buf.signature_help, opts)
     end
 })
-
--- treesitter
----@diagnostic disable-next-line: missing-fields
-require("nvim-treesitter.configs").setup {
-    auto_install = true,
-    highlight = {
-        enable = true,
-    },
-}

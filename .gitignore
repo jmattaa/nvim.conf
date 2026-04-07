@@ -1,5 +1,5 @@
 plugin/packer_compiled.lua
-lazy-lock.json
+nvim-pack-lock.json
 
 # my plugin :>
 .quickmarks
