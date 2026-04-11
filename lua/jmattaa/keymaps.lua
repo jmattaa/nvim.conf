@@ -14,3 +14,6 @@ vim.keymap.set("v", "<leader>y", "\"+y")
 -- nice change file stuff
 vim.keymap.set("n", "<leader>cf", "<C-^>")
 
+
+-- shi that you need https://github.com/jmattaa/scripts for
+vim.keymap.set("n", "<leader>if", ":.!ifndef %:t<CR>")
