@@ -14,6 +14,8 @@ vim.keymap.set("v", "<leader>y", "\"+y")
 -- nice change file stuff
 vim.keymap.set("n", "<leader>cf", "<C-^>")
 
+-- stuff to open man page for word under cursor pretty nice shi
+vim.keymap.set("n", "<leader>k", ":Man<CR>")
 
 -- shi that you need https://github.com/jmattaa/scripts for
 vim.keymap.set("n", "<leader>if", ":.!ifndef %:t<CR>")
