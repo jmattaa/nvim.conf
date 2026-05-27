@@ -1,7 +1,7 @@
-vim.pack.add({
+vim.pack.add {
     "https://github.com/vague2k/vague.nvim",
     "https://github.com/miikanissi/modus-themes.nvim"
-})
+}
 
 require("vague").setup { terminal_colors = true }
 
