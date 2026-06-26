@@ -11,6 +11,9 @@ vim.keymap.set("v", ">", ">gv")
 vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")
 
+-- copy open buffer filename into clipboard
+vim.keymap.set("n", "<leader>cp", ":let @+ = expand('%')<CR>")
+
 -- nice change file stuff
 vim.keymap.set("n", "<leader>cf", "<C-^>")
 
