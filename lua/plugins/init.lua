@@ -3,6 +3,7 @@ require "plugins.colors"
 require "plugins.pick"
 require "plugins.fidget"
 require "plugins.treesitter"
+require "plugins.tinycmdline"
 
 vim.pack.add {
     "https://github.com/Exafunction/windsurf.vim",
