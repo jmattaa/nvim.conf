@@ -9,4 +9,4 @@ require("vague").setup { terminal_colors = true }
 require("modus-themes.colors").modus_vivendi.bg_dim = "#676767"
 require("modus-themes").setup { line_nr_column_background = false }
 
-require "jmattaa.colorutils".setcolor "modus"
+require "jmattaa.colorutils".setcolor "vague"

@@ -1,9 +1,8 @@
 require "plugins.lsp"
 require "plugins.colors"
 require "plugins.pick"
-require "plugins.fidget"
 require "plugins.treesitter"
-require "plugins.tinycmdline"
+require "plugins.noice"
 
 vim.pack.add {
     "https://github.com/Exafunction/windsurf.vim",
