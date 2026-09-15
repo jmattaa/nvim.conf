@@ -15,6 +15,12 @@ require "noice".setup {
                 winhighlight = "NormalFloat:NormalFloat,FloatBorder:FloatBorder",
             },
         },
+        popupmenu = {
+            border = {
+                style = "none",
+                padding = { 0, 0 },
+            },
+        },
     },
     messages = {
         enabled = true,
