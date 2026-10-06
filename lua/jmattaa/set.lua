@@ -12,7 +12,7 @@ vim.o.hlsearch = false
 vim.o.incsearch = true
 
 vim.o.termguicolors = true
-vim.o.colorcolumn = "80"
+vim.o.colorcolumn = "0"
 vim.o.cursorline = true
 vim.o.guicursor = "" -- keep insert mode with block cursor
 
