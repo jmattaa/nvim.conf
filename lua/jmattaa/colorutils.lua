@@ -39,7 +39,7 @@ M.setcolor = function(name)
     local p = buildpalette()
     local file = io.open(os.getenv("HOME") .. "/.config/ghostty/theme", "w")
     if not file then
-        vim.notify("Failed to open ghosttu theme file")
+        vim.notify("Failed to open ghostty theme file")
     end
 
     -- for the syntax highlighting in neovim
