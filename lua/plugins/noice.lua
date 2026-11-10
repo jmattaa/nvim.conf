@@ -7,8 +7,12 @@ require "noice".setup {
     views = {
         cmdline_popup = {
             border = {
-                style = "none",
-                padding = { 1, 2 },
+                style = "rounded",
+                padding = { 0, 1 },
+            },
+            position = {
+                row = 5,
+                col = "50%"
             },
             filter_options = {},
             win_options = {
@@ -17,7 +21,7 @@ require "noice".setup {
         },
         popupmenu = {
             border = {
-                style = "none",
+                style = "rounded",
                 padding = { 0, 0 },
             },
         },
